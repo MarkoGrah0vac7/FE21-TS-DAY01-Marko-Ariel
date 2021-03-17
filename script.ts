@@ -28,7 +28,7 @@
 
 // 10 X 10 = 100
 var table1;
-table1 = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+table1 = "<table border='1'>";
 //for rows
 for(let i=1; i<=10;i++){
     table1 = table1 + "<tr>";

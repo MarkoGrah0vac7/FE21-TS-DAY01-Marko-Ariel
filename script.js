@@ -14,16 +14,23 @@
 // …
 // 9 X 10 = 10
 // 10 X 10 = 100
-var table1;
-table1 = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
-//for rows
-for (let i = 1; i <= 10; i++) {
-    table1 = table1 + "<tr>";
-    //create columns
-    for (let j = 1; j <= 10; j++) {
-        table1 = table1 + "<td>" + i * j + "</td>";
+function tableCreate() {
+    var table1;
+
+    table1 = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    //for rows
+    for (let i = 1; i <= 10; i++) {
+        table1 = table1 + "<tr>";
+        //create columns
+        for (let j = 1; j <= 10; j++) {
+            table1 = table1 + "<td>" + i * j + "</td>";
+        }
+
+        table1 = table1 + "</tr>";
     }
-    table1 = table1 + "</tr>";
+
+    table1 = table1 + "</table>";
+    document.write(table1);
 }
-table1 = table1 + "</table>";
-document.write(table1);
+
+tableCreate();
