@@ -14,7 +14,7 @@
 // …
 // 9 X 10 = 10
 // 10 X 10 = 100
-function tableCreate() {
+function table() {
     var table1;
     table1 = "<table border='1'>";
     //for rows
@@ -29,4 +29,4 @@ function tableCreate() {
     table1 = table1 + "</table>";
     document.write(table1);
 }
-tableCreate();
+table();
