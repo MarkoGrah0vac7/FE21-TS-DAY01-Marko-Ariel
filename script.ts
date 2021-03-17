@@ -27,6 +27,7 @@
 // 9 X 10 = 10
 
 // 10 X 10 = 100
+function tableCreate() {
 var table1;
 table1 = "<table border='1'>";
 //for rows
@@ -41,4 +42,6 @@ for(let i=1; i<=10;i++){
 
 table1 = table1 + "</table>";
 document.write(table1);
+}
+tableCreate();
  

@@ -16,21 +16,17 @@
 // 10 X 10 = 100
 function tableCreate() {
     var table1;
-
-    table1 = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    table1 = "<table border='1'>";
     //for rows
-    for (let i = 1; i <= 10; i++) {
+    for (var i = 1; i <= 10; i++) {
         table1 = table1 + "<tr>";
         //create columns
-        for (let j = 1; j <= 10; j++) {
+        for (var j = 1; j <= 10; j++) {
             table1 = table1 + "<td>" + i * j + "</td>";
         }
-
         table1 = table1 + "</tr>";
     }
-
     table1 = table1 + "</table>";
     document.write(table1);
 }
-
 tableCreate();
